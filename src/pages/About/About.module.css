@@ -27,7 +27,7 @@
 .avatar {
   width: 250px;
   height: 350px;
-  border: none;
+  border: 3px solid var(--secondary);
   border-radius: 5rem;
 }
 
