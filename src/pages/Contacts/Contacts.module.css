@@ -24,3 +24,16 @@
 .icon:hover {
   color: var(--primary);
 }
+
+@media (max-width: 768px) {
+  .contacts {
+    text-align: center;
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icons {
+    gap: 0.5rem;
+  }
+}

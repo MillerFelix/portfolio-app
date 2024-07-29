@@ -1,3 +1,7 @@
+.projects {
+  padding-block: 2.5rem;
+}
+
 .projects h2 {
   text-align: center;
 }
@@ -6,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: wrap;
+  flex-wrap: wrap;
   width: 100%;
   gap: 1.5rem;
   margin-block: 1rem;

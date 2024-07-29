@@ -6,6 +6,8 @@
   height: 50px;
   background-color: var(--primary);
   color: var(--white);
+  position: fixed;
+  top: 0;
 }
 
 .header span {
@@ -23,4 +25,49 @@ header a {
 .header a:hover {
   color: var(--red);
   transition: all 0.4s;
+}
+
+/* Menu sandwich */
+@media (max-width: 768px) {
+  .menuButton {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  .row {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white);
+  }
+
+  .menuSandwich {
+    display: none;
+  }
+
+  .show {
+    display: flex;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    flex-direction: column;
+    top: 50px;
+    right: 0;
+    padding: 20px;
+    gap: 1rem;
+    background-color: var(--primary);
+  }
+}
+
+@media (max-width: 480px) {
+  .show {
+    width: 100%;
+  }
 }
